@@ -46,6 +46,7 @@ CREATE TABLE students (
 CREATE TABLE staff (
     staff_id INT AUTO_INCREMENT PRIMARY KEY,
     staff_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255)  NOT NULL,
     role VARCHAR(255) NOT NULL
 );
 
