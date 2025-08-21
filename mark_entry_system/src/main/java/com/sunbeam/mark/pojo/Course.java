@@ -1,5 +1,6 @@
 package com.sunbeam.mark.pojo;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -8,16 +9,17 @@ import jakarta.persistence.Table;
 @Table(name ="courses")
 public class Course {
 	@Id
-	private int course_id;
+	@Column(name = "course_id")
+	private int courseId;
 	
 	private String course_name;
 
 	public int getCourse_id() {
-		return course_id;
+		 return courseId;
 	}
 
 	public void setCourse_id(int course_id) {
-		this.course_id = course_id;
+		this.courseId = courseId;
 	}
 
 	public String getCourse_name() {
@@ -30,7 +32,7 @@ public class Course {
 
 	@Override
 	public String toString() {
-		return "Course [course_id=" + course_id + ", course_name=" + course_name + "]";
+		return "Course [courseId=" + courseId + ", course_name=" + course_name + "]";
 	}
   
 	

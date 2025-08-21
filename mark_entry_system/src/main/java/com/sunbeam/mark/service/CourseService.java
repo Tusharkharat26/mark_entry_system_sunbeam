@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sunbeam.mark.pojo.Course;
-import com.sunbeam.mark.repository.CourseRepository;
+import com.sunbeam.mark.dao.CourseRepository;
 
 @Service
 public class CourseService {
